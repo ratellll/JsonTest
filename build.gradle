@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group 'study.JsonTest'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+    implementation 'org.json:json:20220320'
+    implementation 'com.googlecode.json-simple:json-simple:1.1.1'
+    implementation 'com.fasterxml.jackson.dataformat:jackson-dataformat-csv:2.13.0'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.13.0'
+    }
+
+test {
+    useJUnitPlatform()
+}
